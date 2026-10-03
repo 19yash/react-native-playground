@@ -1,0 +1,15 @@
+echo "🔍 Running pre-commit checks..."
+
+# 1. Type check
+echo "TypeScript checking..."
+npm run typecheck || exit 1
+
+# 2. Lint and format staged files
+echo "Linting & formatting staged files..."
+npx lint-staged || exit 1
+
+# 3. Codebase format check
+echo "Prettier format checking all files..."
+npm run formatcheck || exit 1
+
+echo "✅ All checks passed! Proceeding with commit."

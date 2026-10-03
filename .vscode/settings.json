@@ -1,0 +1,9 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never",
+    "source.sortMembers": "never"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": ["aadhaar", "pincode", "pressable", "xxxxl", "xxxxxl"]
+}
